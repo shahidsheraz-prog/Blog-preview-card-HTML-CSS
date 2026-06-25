@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: #F4D04E;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    background-color: #fff;
+    min-height: 32rem;
+    width: 25rem;
+    padding: 1.4rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 0px 0px #111111;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 0.6rem;
+}
+
+.content-card {
+    padding-top: 1rem;
+}
+
+.content-card .badge {
+        display: inline-block;
+        background-color: #f4d04e;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.3rem 0.8rem;
+        border-radius: 0.3rem;
+}
+
+.publish-card {
+    padding-top: 0.8rem;
+    font-size: 0.77rem;
+    font-weight: 600;
+}
+
+.card-title {
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s ease;
+}
+
+.card-title a:hover {
+    color: #ffd640;
+}
+
+.card-description {
+    padding-top: 1rem;
+    line-height: 1.5;
+    color: #808080;
+    letter-spacing: 0.4px;
+}
+
+.card-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.6rem;
+}
+
+.card-author .avatar {
+    width: 2.3rem;
+}
+
+.card-author .author-name {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #111111;
+}
+
+@media (max-width: 1440px) {
+    .card {
+        width: 24rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: 23rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 25rem;
+    }
+
+    .content-card .badge {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: 24rem;
+        min-height: 30rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 24rem;
+        min-height: auto;
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        max-width: 22rem;
+        padding: 1.1rem;
+    }
+
+    .card-title {
+        font-size: 0.75rem;
+    }
+
+    .card-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    .card {
+        max-width: 100%;
+        padding: 1rem;
+        box-shadow: 6px 6px 0px 0px #111111;
+    }
+
+    .content-card .badge {
+        font-size: 0.85rem;
+        padding: 0.25rem 0.6rem;
+    }
+
+    .publish-card {
+        font-size: 0.72rem;
+    }
+
+    .card-title {
+        font-size: 0.7rem;
+    }
+
+    .card-description {
+        font-size: 0.85rem;
+    }
+
+    .card-author .author-name {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        padding: 12px;
+    }
+
+    .card {
+        padding: 0.9rem;
+        box-shadow: 4px 4px 0px 0px #111111;
+        border-radius: 0.8rem;
+    }
+
+    .card img {
+        border-radius: 0.4rem;
+    }
+
+    .content-card {
+        padding-top: 0.8rem;
+    }
+
+    .content-card .badge {
+        font-size: 0.78rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .publish-card {
+        font-size: 0.68rem;
+    }
+
+    .card-title {
+        font-size: 0.65rem;
+        padding-top: 0.8rem;
+    }
+
+    .card-description {
+        font-size: 0.8rem;
+        padding-top: 0.8rem;
+    }
+
+    .card-author {
+        padding-top: 1.2rem;
+    }
+
+    .card-author .avatar {
+        width: 2rem;
+    }
+
+    .card-author .author-name {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        padding: 8px;
+    }
+
+    .card {
+        padding: 0.7rem;
+        box-shadow: 3px 3px 0px 0px #111111;
+        border-radius: 0.6rem;
+    }
+
+    .content-card .badge {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.4rem;
+    }
+
+    .publish-card {
+        font-size: 0.62rem;
+    }
+
+    .card-title {
+        font-size: 0.58rem;
+    }
+
+    .card-description {
+        font-size: 0.72rem;
+        line-height: 1.4;
+    }
+
+    .card-author {
+        gap: 0.7rem;
+        padding-top: 1rem;
+    }
+
+    .card-author .avatar {
+        width: 1.7rem;
+    }
+
+    .card-author .author-name {
+        font-size: 0.65rem;
+    }
+}
+
